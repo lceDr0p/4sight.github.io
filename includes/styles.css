@@ -802,9 +802,8 @@ footer .column > a:hover{
     }
     
     nav{
-        padding: 1.2rem 1rem;
-        flex-direction: column;
-        gap: 0.8rem;
+        padding: 1.5rem 1rem;
+        gap: 1rem;
     }
     
     .nav-logo{
