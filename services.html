@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+    <link rel="stylesheet" href="includes/styles.css">
+    <title>Services - 4SIGHT Geosolutions</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="includes/images/Logo2w.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link"><a href="services.html">Service</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
+            <li id="link4" class="link"><a href="#">Others</a></li>
+        </ul>
+        <button class="btn nav-btn"><a href="projects.html">See Projects &rarr;</a></button>
+        <button class="burger-menu" id="burgerMenu"><i class="ri-menu-line"></i></button>
+        
+        <!-- Overlay for menu -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+        
+        <!-- Mobile menu popup -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Others</a></li>
+                <li><a href="projects.html">See Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="services-hero-content">
+            <h1>Our <span>Services</span></h1>
+            <p>Comprehensive Geospatial Solutions Tailored to Your Needs</p>
+        </div>
+        <span class="blur"></span>
+        <span class="blur"></span>
+    </section>
+
+    <!-- Services Category 1: Survey Services -->
+    <section class="container service-detail-section" id="survey-services">
+        <div class="service-header">
+            <div class="service-header-content">
+                <h2>Survey Services</h2>
+                <p>Precision surveying using advanced technology and expert field professionals</p>
+            </div>
+            <div class="service-icon-large">
+                <i class="ri-compass-2-line"></i>
+            </div>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-survey-1.jpg" alt="Hydrographic Survey" class="gallery-image active">
+                        <img src="includes/images/service-survey-2.jpg" alt="Hydrographic Survey" class="gallery-image">
+                        <img src="includes/images/service-survey-3.jpg" alt="Hydrographic Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="0"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="0" data-index="0"></span>
+                            <span class="dot" data-gallery="0" data-index="1"></span>
+                            <span class="dot" data-gallery="0" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="0"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-water-flash-line"></i> Hydrographic Surveys</h3>
+                    <p>Precise bathymetric positioning, tidal correction, and integration with terrestrial control for marine engineering and flood-risk assessment.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-aero-1.jpg" alt="Aerial Photogrammetry" class="gallery-image active">
+                        <img src="includes/images/service-aero-2.jpg" alt="Aerial Photogrammetry" class="gallery-image">
+                        <img src="includes/images/service-aero-3.jpg" alt="Aerial Photogrammetry" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="1"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="1" data-index="0"></span>
+                            <span class="dot" data-gallery="1" data-index="1"></span>
+                            <span class="dot" data-gallery="1" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="1"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-camera-line"></i> Aerial Photogrammetry Surveys</h3>
+                    <p>Survey-grade imagery with ground control and rigorous georeferencing to produce accurate orthomosaics and photogrammetric 3D models for engineering use.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-lidar-1.jpg" alt="Aerial LiDAR" class="gallery-image active">
+                        <img src="includes/images/service-lidar-2.jpg" alt="Aerial LiDAR" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="2"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="2" data-index="0"></span>
+                            <span class="dot" data-gallery="2" data-index="1"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="2"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-radar-line"></i> Aerial LiDAR Surveys</h3>
+                    <p>Geodetic LiDAR acquisition and calibration delivering survey-accurate point clouds, georeferenced to project datums for engineering-grade terrain modeling and analysis.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-control-1.jpg" alt="Control Survey" class="gallery-image active">
+                        <img src="includes/images/service-control-2.jpg" alt="Control Survey" class="gallery-image">
+                        <img src="includes/images/service-control-3.jpg" alt="Control Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="3"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="3" data-index="0"></span>
+                            <span class="dot" data-gallery="3" data-index="1"></span>
+                            <span class="dot" data-gallery="3" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="3"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-map-pin-2-line"></i> Horizontal and Vertical Control Surveys</h3>
+                    <p>GNSS/RTK network establishment, precise leveling, and rigorous adjustment to provide reliable reference frames for surveying and engineering projects.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-topo-1.jpg" alt="Topographic Survey" class="gallery-image active">
+                        <img src="includes/images/service-topo-2.jpg" alt="Topographic Survey" class="gallery-image">
+                        <img src="includes/images/service-topo-3.jpg" alt="Topographic Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="4"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="4" data-index="0"></span>
+                            <span class="dot" data-gallery="4" data-index="1"></span>
+                            <span class="dot" data-gallery="4" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="4"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-road-map-line"></i> Topographic Surveys</h3>
+                    <p>Accurate capture of terrain elevations and features tied to geodetic control for planning, design, and construction deliverables.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-parcel-1.jpg" alt="Parcellary Survey" class="gallery-image active">
+                        <img src="includes/images/service-parcel-2.jpg" alt="Parcellary Survey" class="gallery-image">
+                        <img src="includes/images/service-parcel-3.jpg" alt="Parcellary Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="5"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="5" data-index="0"></span>
+                            <span class="dot" data-gallery="5" data-index="1"></span>
+                            <span class="dot" data-gallery="5" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="5"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-layout-grid-line"></i> Parcellary Surveys</h3>
+                    <p>Precise boundary measurement, legal-boundary coordinate derivation, and plans suitable for registration and title processing.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-isolated-1.png" alt="Isolated Land Survey" class="gallery-image active">
+                        <img src="includes/images/service-isolated-2.png" alt="Isolated Land Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="6"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="6" data-index="0"></span>
+                            <span class="dot" data-gallery="6" data-index="1"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="6"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-home-heart-line"></i> Isolated Land Surveys Approval</h3>
+                    <p>Accurate measurements and deliverables prepared to meet regulatory and municipal requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Category 2: Technical Services -->
+    <section class="container service-detail-section" id="technical-services">
+        <div class="service-header">
+            <div class="service-header-content">
+                <h2>Technical Services</h2>
+                <p>Specialized solutions for regulatory compliance and advanced analysis</p>
+            </div>
+            <div class="service-icon-large">
+                <i class="ri-settings-3-line"></i>
+            </div>
+        </div>
+
+        <div class="service-grid">
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-caap-1.jpg" alt="CAAP Survey" class="gallery-image active">
+                        <img src="includes/images/service-caap-2.jpg" alt="CAAP Survey" class="gallery-image">
+                        <img src="includes/images/service-caap-3.jpg" alt="CAAP Survey" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="7"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="7" data-index="0"></span>
+                            <span class="dot" data-gallery="7" data-index="1"></span>
+                            <span class="dot" data-gallery="7" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="7"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-flight-takeoff-line"></i> CAAP Height Clearance Survey</h3>
+                    <p>Specialized surveys ensuring compliance with Civil Aviation Authority requirements for airspace safety and clearance.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-doe-1.jpg" alt="DOE Mapping" class="gallery-image active">
+                        <img src="includes/images/service-doe-2.jpg" alt="DOE Mapping" class="gallery-image">
+                        <img src="includes/images/service-doe-3.jpg" alt="DOE Mapping" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="8"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="8" data-index="0"></span>
+                            <span class="dot" data-gallery="8" data-index="1"></span>
+                            <span class="dot" data-gallery="8" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="8"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-leaf-line"></i> DOE Mapping Requirements Production</h3>
+                    <p>Environmental compliance mapping and documentation for Department of Environment regulatory submissions and approvals.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-gis-1.jpg" alt="GIS Cartography" class="gallery-image active">
+                        <img src="includes/images/service-gis-2.jpg" alt="GIS Cartography" class="gallery-image">
+                        <img src="includes/images/service-gis-3.jpg" alt="GIS Cartography" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="9"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="9" data-index="0"></span>
+                            <span class="dot" data-gallery="9" data-index="1"></span>
+                            <span class="dot" data-gallery="9" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="9"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-map-2-line"></i> GIS and Cartography</h3>
+                    <p>Professional geographic information system analysis and custom map creation for visualization and decision-making.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-training-1.png" alt="GIS Training" class="gallery-image active">
+                        <img src="includes/images/service-training-2.png" alt="GIS Training" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="10"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="10" data-index="0"></span>
+                            <span class="dot" data-gallery="10" data-index="1"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="10"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-graduation-cap-line"></i> GIS Training</h3>
+                    <p>Comprehensive training programs on GIS software and spatial analysis techniques for professionals and organizations.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-spatial-1.jpg" alt="Spatial Data" class="gallery-image active">
+                        <img src="includes/images/service-spatial-2.jpg" alt="Spatial Data" class="gallery-image">
+                        <img src="includes/images/service-spatial-3.jpg" alt="Spatial Data" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="11"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="11" data-index="0"></span>
+                            <span class="dot" data-gallery="11" data-index="1"></span>
+                            <span class="dot" data-gallery="11" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="11"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-database-2-line"></i> Spatial Data Processing</h3>
+                    <p>Processing, adjustment, and quality-control of geospatial and geodetic data — coordinate transformations, datum management, and survey-grade deliverables for engineering and mapping projects.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-image-gallery">
+                    <div class="gallery-container">
+                        <img src="includes/images/service-land-1.jpg" alt="Land Documents" class="gallery-image active">
+                        <img src="includes/images/service-land-2.jpg" alt="Land Documents" class="gallery-image">
+                        <img src="includes/images/service-land-3.jpg" alt="Land Documents" class="gallery-image">
+                    </div>
+                    <div class="gallery-controls">
+                        <button class="gallery-btn prev" data-gallery="12"><i class="ri-arrow-left-s-line"></i></button>
+                        <div class="gallery-dots">
+                            <span class="dot active" data-gallery="12" data-index="0"></span>
+                            <span class="dot" data-gallery="12" data-index="1"></span>
+                            <span class="dot" data-gallery="12" data-index="2"></span>
+                        </div>
+                        <button class="gallery-btn next" data-gallery="12"><i class="ri-arrow-right-s-line"></i></button>
+                    </div>
+                </div>
+                <div class="service-content">
+                    <h3><i class="ri-file-text-line"></i> Land Document Processing</h3>
+                    <p>Professional preparation and processing of land surveys and technical documents for government registration and approval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Need a Custom Solution?</h2>
+            <p>Contact our team to discuss how our services can meet your specific project requirements.</p>
+            <button class="btn"><a href="contact.html">Get in Touch</a></button>
+        </div>
+    </section>
+
+    <footer class="container">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="includes/images/Logo2w.png">
+            </div>
+            <p>
+                4SIGHT Geosolutions Corp. 
+            </p>
+            <div class="socials">
+                <a href="#"><i class="ri-youtube-line"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-twitter-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Us</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsors</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright ©. All Rights Reserved.
+    </div>
+
+    <script src="includes/js/script.js"></script>
+</body>
+
+</html>

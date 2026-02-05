@@ -22,16 +22,32 @@
 
         <ul class="nav-links">
             <li class="link"><a href="index.html">Home</a></li>
-            <li id="link1" class="link"><a href="#">About</a></li>
-            <li id="link2" class="link"><a href="#">Service</a></li>
-            <li id="link3" class="link"><a href="#">Contact</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link"><a href="services.html">Service</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
             <li id="link4" class="link"><a href="#">Others</a></li>
         </ul>
-        <button class="btn"><a href="projects.html">See Projects &rarr;</a></button>
+        <button class="btn nav-btn"><a href="projects.html">See Projects &rarr;</a></button>
+        <button class="burger-menu" id="burgerMenu"><i class="ri-menu-line"></i></button>
+        
+        <!-- Overlay for menu -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+        
+        <!-- Mobile menu popup -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Others</a></li>
+                <li><a href="projects.html">See Projects</a></li>
+            </ul>
+        </div>
     </nav>
 
     <header class="container">
-        <div class="content">
+        <div class="hero">
             <h4>Welcome to </h4>
             <H1><span>4SIGHT</span> Geosolutions</H1>
             <p>
@@ -46,7 +62,12 @@
 
         </div>
         <div class="image">
-            <img src="">
+            <div class="slideshow">
+                <img class="slide visible" src="includes/images/hero1.jpg" alt="Hero 1">
+                <img class="slide" src="includes/images/hero2.jpg" alt="Hero 2">
+                <img class="slide" src="includes/images/hero3.jpg" alt="Hero 3">
+                <img class="slide" src="includes/images/hero4.jpg" alt="Hero 4">
+            </div>
             <span class="blur2"></span>
             <span class="blur2"></span>
         </div>
@@ -54,7 +75,7 @@
 
     <section class="container">
         <h2 class="header">NOTABLE PROJECTS</h2>
-        <div class="features">
+        <div class="projects">
             <div class="card">
                 <div class="image">
                     <img src="includes/images/nproject2.png">
@@ -95,41 +116,17 @@
 
     <section class="container">
         <h2 class="header">THE SERVICES WE OFFER</h2>
-        <div class="pricing">
+        <div class="service">
             <div class="card">
                 <div class="content">
-                    <h4>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Hydrographic Surveys
-                    </h4>
-                    <h4>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Aerial Photogrammetry Surveys
-                    </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
                         Aerial LiDAR Surveys
                     </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
-                        Horizontal and Vertical Control Surveys
+                        Aerial Photogrammetry Surveys
                     </h4>
-                    <h4>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Tapographic Surveys
-                    </h4>
-                    <h4>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Parcellary Surveys
-                    </h4>
-                    <h4>
-                        <i class="ri-checkbox-circle-line"></i>
-                        Isolated Land Surveys & Approval (Relocation, Subdivision, Consolidation, etc.)
-                    </h4>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
                         CAAP Height Clearance Survey
@@ -140,7 +137,7 @@
                     </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
-                        GIS & Cartography
+                        GIS Cartography
                     </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
@@ -148,14 +145,46 @@
                     </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
-                        Spatial Data Processing
+                        Horizontal and Vertical Control Surveys
+                    </h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Hydrographic Surveys
+                    </h4>
+                    <h4>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Isolated Land Surveys Approval
                     </h4>
                     <h4>
                         <i class="ri-checkbox-circle-line"></i>
                         Land Document Processing
                     </h4>
+                    <h4>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Parcellary Surveys
+                    </h4>
+                    <h4>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Spatial Data Processing
+                    </h4>
+                    <h4>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Topographic Surveys
+                    </h4>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Ready to Transform Your Project?</h2>
+            <p>Get in touch with our team of experts to discuss how 4SIGHT Geosolutions can help you achieve your goals.</p>
+            <button class="btn"><a href="contact.html">Contact Us Today</a></button>
         </div>
     </section>
 
