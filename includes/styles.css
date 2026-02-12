@@ -471,12 +471,27 @@ section .header{
     gap: 2rem;
 }
 
+/* Services section accents */
+.services-offer-section .header{
+    position: relative;
+}
+
+.services-offer-section .header::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 0.75rem auto 0;
+    border-radius: 99px;
+    background: linear-gradient(90deg, #1c7081, #dc624e);
+}
+
 .service .card{
     padding: 3rem 2rem;
     background-color: #27272a;
     display: flex;
     flex-direction: column;
-    border: 2px solid transparent;
+    border: 2px solid #1c7081;
     border-radius: 15px;
     transition: all 0.3s ease;
 }
@@ -485,6 +500,7 @@ section .header{
     background-color: #323232;
     border-color: #DC624E;
     transform: translateY(-8px);
+    box-shadow: 0 10px 28px rgba(220, 98, 78, 0.25);
 }
 
 .service .card .content{
@@ -497,6 +513,16 @@ section .header{
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
+}
+
+.service .card h4 i{
+    color: #1c7081;
+    margin-right: 0.4rem;
+    transition: color 0.3s ease;
+}
+
+.service .card:hover h4 i{
+    color: #dc624e;
 }
 
 .service .card h3{
